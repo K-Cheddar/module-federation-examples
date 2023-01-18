@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Nav />
+      <div>Remove me to force a hot reload!</div>
       <Component {...pageProps} />
     </>
   );

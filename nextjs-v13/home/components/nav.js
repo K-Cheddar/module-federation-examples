@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import FileDataOne from './fileOne';
+import FileDataTwo from './fileTwo';
 
 const links = [
   { href: 'https://zeit.co/now', label: 'ZEIT' },
@@ -32,6 +34,8 @@ const Nav = () => (
         </li>
       ))}
     </ul>
+
+    <FileDataOne/>
 
     <style jsx>{`
       :global(body) {
