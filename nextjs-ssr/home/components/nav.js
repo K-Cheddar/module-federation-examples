@@ -1,6 +1,8 @@
 import React, {Suspense} from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import FileDataOne from './fileOne';
+import FileDataTwo from './fileTwo';
 
 export const HelloWorld = dynamic(() => import('./helloWorld').then(mod => {
   return {default: mod.HelloWorld}
@@ -36,6 +38,8 @@ const Nav = () => (
         </li>
       ))}
     </ul>
+
+    <FileDataOne/>
 
     <style jsx>{`
       :global(body) {

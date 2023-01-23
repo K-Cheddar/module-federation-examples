@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Suspense fallback={'loading'}>
       <Nav />
+      <div>Remove me to force a hot reload</div>
       </Suspense>
       <Component {...pageProps} />
     </>
